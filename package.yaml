@@ -1,0 +1,41 @@
+name: json-feed
+version: 0.0.0
+
+category: Web
+description: >
+  This is an implementation of the JSON Feed spec in Haskell. The spec is
+  available at <https://jsonfeed.org>. JSON Feed is similar to the Atom and RSS
+  feed formats, but it is serialized as JSON rather than XML.
+extra-source-files: feeds/*.json
+github: tfausak/json-feed
+license-file: LICENSE.markdown
+license: MIT
+maintainer: Taylor Fausak
+synopsis: JSON Feed
+
+dependencies:
+  - aeson
+  - base
+  - bytestring
+  - mime-types
+  - network-uri
+  - tagsoup
+  - text
+  - time
+ghc-options: -Wall
+
+library:
+  source-dirs: library
+
+tests:
+  test:
+    dependencies:
+      - filepath
+      - hspec
+      - json-feed
+    ghc-options:
+      - -rtsopts
+      - -threaded
+      - -with-rtsopts=-N
+    main: test.hs
+    source-dirs: tests

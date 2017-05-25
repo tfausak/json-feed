@@ -1,0 +1,120 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL -- https://www.manton.org/feed/json -- and add it your reader.",
+    "home_page_url": "https://www.manton.org",
+    "feed_url": "https://www.manton.org/feed/json",
+    "title": "Manton Reece",
+    "description": "",
+    "items": [
+        {
+            "id": "https://www.manton.org/2017/05/5177.html",
+            "url": "https://www.manton.org/2017/05/5177.html",
+            "title": "",
+            "content_html": "<p>NSDrinking tonight, 8pm at Ginger Man. We were thinking near the front instead of out back, so we can check on the Cavs game. :-)</p>\n",
+            "date_published": "2017-05-25T15:40:25+00:00",
+            "date_modified": "2017-05-25T15:40:25+00:00",
+            "author": {
+                "name": "manton"
+            }
+        },
+        {
+            "id": "https://www.manton.org/2017/05/5175.html",
+            "url": "https://www.manton.org/2017/05/5175.html",
+            "title": "",
+            "content_html": "<p>Still making plans for San Jose? 1 day left to register for <a href=\"http://cocoaconf.com/nextdoor/home\">CocoaConf during WWDC</a>. Hope to see y&#8217;all there.</p>\n",
+            "date_published": "2017-05-25T10:48:12+00:00",
+            "date_modified": "2017-05-25T10:48:12+00:00",
+            "author": {
+                "name": "manton"
+            }
+        },
+        {
+            "id": "https://www.manton.org/2017/05/5173.html",
+            "url": "https://www.manton.org/2017/05/5173.html",
+            "title": "",
+            "content_html": "<p>WordPress plugin for JSON Feed is now in the directory. WP Admin \u2192 Plugins \u2192 Add New, then search for &#8220;jsonfeed&#8221;. Easy install and update.</p>\n",
+            "date_published": "2017-05-25T08:02:11+00:00",
+            "date_modified": "2017-05-25T08:02:11+00:00",
+            "author": {
+                "name": "manton"
+            }
+        },
+        {
+            "id": "https://www.manton.org/2017/05/micro-blog-photos.html",
+            "url": "https://www.manton.org/2017/05/micro-blog-photos.html",
+            "title": "Micro.blog photos",
+            "content_html": "<p>This week we added a selection of photos to the Discover page on <a href=\"https://micro.blog/\">Micro.blog</a>, and today I uploaded a new TestFlight beta with the same feature inside the app. It&#8217;s another way to find users to follow, or just see what the Micro.blog community is up to.</p>\n<p>Here&#8217;s what the iPhone screen looks like:</p>\n<p><img src=\"http://www.manton.org/images/2017/microblog_discover_photos.png\" width=\"251\" height=\"430\" alt=\"iPhone screenshot\" /></p>\n<p>I think photoblogging is a really important part of indie microblogging. When I share photos online, I want them to be at my own web site in addition to cross-posted to Twitter and other social networks. Photos always capture something \u2014 a moment with family or friends, visiting a new place, or just the everyday routine as it changes \u2014\u00a0and I want Micro.blog to provide a great user experience for photos, from filters to hosting.</p>\n",
+            "date_published": "2017-05-24T17:54:35+00:00",
+            "date_modified": "2017-05-24T17:54:35+00:00",
+            "author": {
+                "name": "manton"
+            }
+        },
+        {
+            "id": "https://www.manton.org/2017/05/first-week-of-json-feed.html",
+            "url": "https://www.manton.org/2017/05/first-week-of-json-feed.html",
+            "title": "First week of JSON Feed",
+            "content_html": "<p>I&#8217;ve been impressed with how quickly people have adopted JSON Feed. There are a bunch of feeds in the wild now, <a href=\"https://jsonfeed.org/code\">as well as code and templates</a> for popular languages and web frameworks. The next step is support in feed readers, including brand new feed readers, which is <a href=\"https://json-feed-viewer.herokuapp.com\">already happening</a>.</p>\n<p>Feedbin and <a href=\"http://blog.newsblur.com/post/160982162270/newsblur-now-supports-the-new-json-feed-spec\">NewsBlur</a> both added support for JSON Feed. I like how <a href=\"https://feedbin.com/blog/2017/05/22/feedbin-supports-json-feed/\">Feedbin&#8217;s Ben Ubois puts it</a>:</p>\n<blockquote><p>\n  One of the criticisms I\u2019ve seen of JSON Feed is that there\u2019s no incentive for feed readers to support JSON Feed. This is not true. One of the largest-by-volume support questions I get is along the lines of \u201cWhy does this random feed not work?\u201d And, 95% of the time, it\u2019s because the feed is broken in some subtle way. JSON Feed will help alleviate these problems, because it\u2019s easier to get right.\n</p></blockquote>\n<p><a href=\"https://micro.blog/\">Micro.blog</a> can also read from JSON feeds. I&#8217;ll be switching over all the hosted sites to prefer JSON. I&#8217;m doing that slowly to make sure there aren&#8217;t any issues with duplicate posts. (There shouldn&#8217;t be, but it&#8217;s something to watch out for with self-hosted sites if your post IDs change.)</p>\n<p><a href=\"https://github.com/manton/jsonfeed-wp\">The WordPress plugin</a> is <em>almost</em> in the WordPress directory. I&#8217;ll link to it as soon as it&#8217;s live, because it will make installing the WordPress plugin much easier.</p>\n",
+            "date_published": "2017-05-24T16:27:21+00:00",
+            "date_modified": "2017-05-24T16:27:21+00:00",
+            "author": {
+                "name": "manton"
+            }
+        },
+        {
+            "id": "https://www.manton.org/2017/05/interview-at-the-brooks-review.html",
+            "url": "https://www.manton.org/2017/05/interview-at-the-brooks-review.html",
+            "title": "Interview at The Brooks Review",
+            "content_html": "<p><a href=\"https://brooksreview.net/2017/05/an-interview-with-manton-reece/\">I talked with Ben Brooks over Slack</a> this week about Micro.blog and JSON Feed. From the chat:</p>\n<blockquote><p>\n  Micro.blog and JSON Feed share a common goal, which is to encourage more blogging on the open web, and new tools that can make blogging easier. I feel like we\u2019ve gotten off course a little since the early days of blogging, with so many people now putting all of their writing into closed, centralized platforms like Twitter or Facebook. I think we can make it easier to own your own content, have your own domain name, and maybe learn from the UI in modern social networks too.\n</p></blockquote>\n<p>Slack makes for a really interesting interview format. Some of the spontaneity of a podcast, but with live editing and an automatic transcript. Similar to what Talkshow.im was trying to do before they shut down.</p>\n",
+            "date_published": "2017-05-24T13:52:09+00:00",
+            "date_modified": "2017-05-24T13:52:09+00:00",
+            "author": {
+                "name": "manton"
+            }
+        },
+        {
+            "id": "https://www.manton.org/2017/05/5165.html",
+            "url": "https://www.manton.org/2017/05/5165.html",
+            "title": "",
+            "content_html": "<p>Uploaded a new TestFlight build with a photos tab under Discover, new filters, and more. Starting to come together.</p>\n",
+            "date_published": "2017-05-24T13:38:27+00:00",
+            "date_modified": "2017-05-24T13:38:27+00:00",
+            "author": {
+                "name": "manton"
+            }
+        },
+        {
+            "id": "https://www.manton.org/2017/05/5163.html",
+            "url": "https://www.manton.org/2017/05/5163.html",
+            "title": "",
+            "content_html": "<p>A couple Micro.blog improvements early this week&#8230; We&#8217;ve started showing photos on the Discover page on the web. It&#8217;s a nice way to find new users. Also, more of the pins work now! Looking forward to adding more.</p>\n",
+            "date_published": "2017-05-23T20:21:12+00:00",
+            "date_modified": "2017-05-23T20:21:12+00:00",
+            "author": {
+                "name": "manton"
+            }
+        },
+        {
+            "id": "https://www.manton.org/2017/05/5161.html",
+            "url": "https://www.manton.org/2017/05/5161.html",
+            "title": "",
+            "content_html": "<p>115 points is a good finish for the Spurs. Their average this season was 105. Gotta beat the Warriors with defense, and can&#8217;t do that when the best defensive player in the NBA is out hurt. Next year.</p>\n",
+            "date_published": "2017-05-22T22:40:07+00:00",
+            "date_modified": "2017-05-22T22:40:07+00:00",
+            "author": {
+                "name": "manton"
+            }
+        },
+        {
+            "id": "https://www.manton.org/2017/05/5159.html",
+            "url": "https://www.manton.org/2017/05/5159.html",
+            "title": "",
+            "content_html": "<p>Spurs start Manu Ginobili for game 4. I love it on a couple levels. And he gets the first basket of the game.</p>\n",
+            "date_published": "2017-05-22T20:09:20+00:00",
+            "date_modified": "2017-05-22T20:09:20+00:00",
+            "author": {
+                "name": "manton"
+            }
+        }
+    ]
+}
