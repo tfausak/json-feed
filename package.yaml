@@ -15,7 +15,7 @@ synopsis: JSON Feed
 
 dependencies:
   - aeson
-  - base
+  - base < 9
   - bytestring
   - mime-types
   - network-uri
