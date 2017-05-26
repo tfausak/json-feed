@@ -150,7 +150,7 @@ data Item = Item
   -- that image wouldn't otherwise appear in the content_html. A feed reader
   -- with a detail view may choose to show this banner image at the top of the
   -- detail view, possibly with the title overlaid.
-  , itemContentHtml :: Maybe Text
+  , itemContentHtml :: Maybe Html
   -- ^ 'itemContentHtml' and 'itemContentText' are each optional strings ---
   -- but one or both must be present. This is the HTML or plain text of the
   -- item. Important: the only place HTML is allowed in this format is in
