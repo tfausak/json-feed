@@ -16,7 +16,7 @@ module JsonFeed
   , Url (..)
   ) where
 
-import Data.Aeson (FromJSON, ToJSON)
+import Data.Aeson (FromJSON, ToJSON, Value)
 import Data.Aeson.Types (Options)
 import Data.ByteString.Lazy (ByteString)
 import Data.Text (Text)
@@ -169,7 +169,7 @@ data Item = Item
   -- ^ The URL of a page elsewhere. This is especially useful for linkblogs. If
   -- 'itemUrl' links to where you're talking about a thing, then
   -- 'itemExternalUrl' links to the thing you're talking about.
-  , itemId :: Json.Value
+  , itemId :: Value
   -- ^ Unique for the item in the feed over time. If an item is ever updated,
   -- the ID should be unchanged. New items should never use a previously-used
   -- ID. If an ID is presented as a number or other type, a JSON Feed reader
