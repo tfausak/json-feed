@@ -3,6 +3,7 @@
 -- | <https://jsonfeed.org>
 module JsonFeed
   ( parseFeed
+  , renderFeed
   -- * Types
   , Feed (..)
   , Author (..)
@@ -37,6 +38,10 @@ import qualified Text.HTML.TagSoup as Html
 
 parseFeed :: ByteString -> Either String Feed
 parseFeed = Json.eitherDecode
+
+
+renderFeed :: Feed -> ByteString
+renderFeed = Json.encode
 
 
 data Feed = Feed
