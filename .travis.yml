@@ -1,0 +1,42 @@
+language: generic
+
+addons:
+  apt:
+    packages:
+      - libgmp-dev
+
+cache:
+  directories:
+    - $HOME/.local/bin
+    - $HOME/.stack
+
+before_install:
+  - | # Install Stack.
+    if test ! -f "$HOME/.local/bin/stack"
+    then
+      VERSION=1.6.1
+      URL="https://github.com/commercialhaskell/stack/releases/download/v$VERSION/stack-$VERSION-$TRAVIS_OS_NAME-x86_64.tar.gz"
+      curl --location "$URL" > stack.tar.gz
+      gunzip stack.tar.gz
+      tar --extract --file stack.tar --strip-components 1
+      mkdir --parents "$HOME/.local/bin"
+      mv stack "$HOME/.local/bin"
+    fi
+  - stack --version
+
+install:
+  - stack setup
+  - stack build --only-dependencies --test
+
+script:
+  - stack build --pedantic --test
+  - stack sdist
+
+after_success:
+  - | # Upload to Hackage.
+    if test "$TRAVIS_TAG" -a "$TRAVIS_OS_NAME" = linux
+    then
+      mkdir --parents "$HOME/.stack/upload"
+      echo "{ \"username\": \"$HACKAGE_USERNAME\", \"password\": \"$HACKAGE_PASSWORD\" }" > "$HOME/.stack/upload/credentials.json"
+      stack upload --no-signature .
+    fi
