@@ -28,7 +28,6 @@ import Numeric.Natural (Natural)
 import Text.HTML.TagSoup (Tag)
 
 import qualified Data.Aeson as Json
-import qualified Data.Aeson.Types as Json
 import qualified Data.List as List
 import qualified Data.Text as Text
 import qualified Data.Text.Encoding as Text
