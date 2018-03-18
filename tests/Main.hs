@@ -1,21 +1,21 @@
 module Main (main) where
 
-import JsonFeed
 import System.FilePath ((</>), (<.>))
-import Test.Hspec
 
 import qualified Control.Monad as Monad
 import qualified Data.ByteString.Lazy as ByteString
 import qualified Data.Either as Either
+import qualified JsonFeed
+import qualified Test.Hspec as Hspec
 
 
 main :: IO ()
-main = hspec . parallel . describe "JsonFeed" $ do
+main = Hspec.hspec . Hspec.parallel . Hspec.describe "JsonFeed" $ do
   Monad.forM_ feeds $ \feed -> do
-    it ("parses the " ++ feed ++ " feed") $ do
+    Hspec.it ("parses the " ++ feed ++ " feed") $ do
       let file = "feeds" </> feed <.> "json"
       contents <- ByteString.readFile file
-      parseFeed contents `shouldSatisfy` Either.isRight
+      JsonFeed.parseFeed contents `Hspec.shouldSatisfy` Either.isRight
 
 feeds :: [String]
 feeds =
