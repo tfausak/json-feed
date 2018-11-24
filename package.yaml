@@ -26,7 +26,7 @@ dependencies:
   network-uri: '>= 2.6.1 && < 2.7'
   tagsoup: '>= 0.14 && < 0.15'
   text: '>= 1.2.2 && < 1.3'
-  time: '>= 1.6.0 && < 1.9'
+  time: '>= 1.6.0 && < 1.10'
 ghc-options:
   - -Weverything
   - -Wno-implicit-prelude
@@ -40,7 +40,7 @@ tests:
   test:
     dependencies:
       filepath: '>= 1.4.1 && < 1.5'
-      hspec: '>= 2.2.3 && < 2.6'
+      hspec: '>= 2.2.3 && < 2.7'
       json-feed: -any
     ghc-options:
       - -rtsopts
