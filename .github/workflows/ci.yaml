@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - { os: ubuntu-18.04, ghc: 9.0.1, cabal: 3.4.0.0 }
+          # - { os: ubuntu-18.04, ghc: 9.0.1, cabal: 3.4.0.0 }
           - { os: ubuntu-18.04, ghc: 8.10.3, cabal: 3.2.0.0 }
           - { os: macos-10.15, ghc: 8.10.3, cabal: 3.2.0.0 }
           - { os: windows-2019, ghc: 8.10.3, cabal: 3.2.0.0 }
@@ -42,5 +42,5 @@ jobs:
           path: dist-newstyle/sdist/json-feed-*.tar.gz
           name: json-feed-${{ github.sha }}.tar.gz
       - run: cabal check
-      - if: github.event_name == 'release' && matrix.os == 'ubuntu-18.04' && matrix.ghc == '9.0.1'
+      - if: github.event_name == 'release' && matrix.os == 'ubuntu-18.04' && matrix.ghc == '8.10.3'
         run: cabal upload --publish --username '${{ secrets.HACKAGE_USERNAME }}' --password '${{ secrets.HACKAGE_PASSWORD }}' dist-newstyle/sdist/json-feed-*.tar.gz
