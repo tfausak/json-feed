@@ -1,6 +1,8 @@
-module Main (main) where
+module Main
+  ( main
+  ) where
 
-import System.FilePath ((</>), (<.>))
+import System.FilePath ((<.>), (</>))
 
 import qualified Control.Monad as Monad
 import qualified Data.ByteString.Lazy as ByteString
@@ -12,7 +14,7 @@ import qualified Test.Hspec as Hspec
 main :: IO ()
 main = Hspec.hspec . Hspec.parallel . Hspec.describe "JsonFeed" $ do
   Monad.forM_ feeds $ \feed -> do
-    Hspec.it ("parses the " ++ feed ++ " feed") $ do
+    Hspec.it ("parses the " <> feed <> " feed") $ do
       let file = "feeds" </> feed <.> "json"
       contents <- ByteString.readFile file
       JsonFeed.parseFeed contents `Hspec.shouldSatisfy` Either.isRight
