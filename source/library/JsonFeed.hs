@@ -5,15 +5,15 @@ module JsonFeed
   ( parseFeed
   , renderFeed
   -- * Types
-  , Feed (..)
-  , Author (..)
-  , Item (..)
-  , Attachment (..)
-  , Hub (..)
+  , Feed(..)
+  , Author(..)
+  , Item(..)
+  , Attachment(..)
+  , Hub(..)
   -- * Wrappers
-  , Html (..)
-  , Mime (..)
-  , Url (..)
+  , Html(..)
+  , Mime(..)
+  , Url(..)
   ) where
 
 import Data.Aeson (FromJSON, ToJSON, Value)
@@ -102,7 +102,8 @@ data Feed = Feed
   -- looking at the raw JSON, and should be ignored by feed readers.
   , feedVersion :: Url
   -- ^ The URL of the version of the format the feed uses.
-  } deriving (Eq, Generic, Show)
+  }
+  deriving (Eq, Generic, Show)
 
 instance FromJSON Feed where
   parseJSON = Json.genericParseJSON (jsonOptions "feed")
@@ -123,13 +124,14 @@ data Author = Author
   -- Twitter account, and so on. Ideally the linked-to page provides a way to
   -- contact the author, but that's not required. The URL could be a @mailto:@
   -- link, though we suspect that will be rare.
-  } deriving (Eq, Generic, Show)
+  }
+  deriving (Eq, Generic, Show)
 
 instance FromJSON Author where
   parseJSON value = do
     author <- Json.genericParseJSON (jsonOptions "author") value
     case (authorAvatar author, authorName author, authorUrl author) of
-      (Nothing, Nothing, Nothing) -> fail ("invalid Author: " ++ show author)
+      (Nothing, Nothing, Nothing) -> fail ("invalid Author: " <> show author)
       _ -> pure author
 
 instance ToJSON Author where
@@ -194,13 +196,14 @@ data Item = Item
   , itemUrl :: Maybe Url
   -- ^ The URL of the resource described by the item. It's the permalink. This
   -- may be the same as the ID --- but should be present regardless.
-  } deriving (Eq, Generic, Show)
+  }
+  deriving (Eq, Generic, Show)
 
 instance FromJSON Item where
   parseJSON value = do
     item <- Json.genericParseJSON (jsonOptions "item") value
     case (itemContentHtml item, itemContentText item) of
-      (Nothing, Nothing) -> fail ("invalid Item: " ++ show item)
+      (Nothing, Nothing) -> fail ("invalid Item: " <> show item)
       _ -> pure item
 
 instance ToJSON Item where
@@ -223,7 +226,8 @@ data Attachment = Attachment
   -- recording in different formats.
   , attachmentUrl :: Url
   -- ^ Specifies the location of the attachment.
-  } deriving (Eq, Generic, Show)
+  }
+  deriving (Eq, Generic, Show)
 
 instance FromJSON Attachment where
   parseJSON = Json.genericParseJSON (jsonOptions "attachment")
@@ -235,7 +239,8 @@ instance ToJSON Attachment where
 data Hub = Hub
   { hubType :: Text
   , hubUrl :: Url
-  } deriving (Eq, Generic, Show)
+  }
+  deriving (Eq, Generic, Show)
 
 instance FromJSON Hub where
   parseJSON = Json.genericParseJSON (jsonOptions "hub")
@@ -249,8 +254,9 @@ newtype Html = Html
   } deriving (Eq, Show)
 
 instance FromJSON Html where
-  parseJSON = Json.withText "Html" (\text ->
-    pure Html { htmlValue = Html.parseTags text })
+  parseJSON = Json.withText
+    "Html"
+    (\text -> pure Html { htmlValue = Html.parseTags text })
 
 instance ToJSON Html where
   toJSON html = Json.String (Html.renderTags (htmlValue html))
@@ -261,8 +267,9 @@ newtype Mime = Mime
   } deriving (Eq, Show)
 
 instance FromJSON Mime where
-  parseJSON = Json.withText "Mime" (\text ->
-    pure Mime { mimeValue = Text.encodeUtf8 text })
+  parseJSON = Json.withText
+    "Mime"
+    (\text -> pure Mime { mimeValue = Text.encodeUtf8 text })
 
 instance ToJSON Mime where
   toJSON mime = Json.String (Text.decodeUtf8 (mimeValue mime))
@@ -273,10 +280,12 @@ newtype Url = Url
   } deriving (Eq, Show)
 
 instance FromJSON Url where
-  parseJSON = Json.withText "Url" (\text ->
-    case Uri.parseURI (Text.unpack text) of
+  parseJSON = Json.withText
+    "Url"
+    (\text -> case Uri.parseURI (Text.unpack text) of
       Just uri -> pure Url { urlValue = uri }
-      Nothing -> fail ("invalid Url: " ++ show text))
+      Nothing -> fail ("invalid Url: " <> show text)
+    )
 
 instance ToJSON Url where
   toJSON url = Json.String (Text.pack (show (urlValue url)))
@@ -284,9 +293,7 @@ instance ToJSON Url where
 
 jsonOptions :: String -> Options
 jsonOptions prefix =
-  Json.defaultOptions
-    { Json.fieldLabelModifier = fieldLabelModifier prefix
-    }
+  Json.defaultOptions { Json.fieldLabelModifier = fieldLabelModifier prefix }
 
 
 fieldLabelModifier :: String -> String -> String
@@ -295,19 +302,15 @@ fieldLabelModifier prefix string =
 
 
 unsafeDropPrefix :: String -> String -> String
-unsafeDropPrefix prefix string =
-  case dropPrefix prefix string of
-    Just suffix -> suffix
-    Nothing -> error (unwords
-      [ "unsafeDropPrefix:"
-      , show prefix
-      , "is not a prefix of"
-      , show string
-      ])
+unsafeDropPrefix prefix string = case dropPrefix prefix string of
+  Just suffix -> suffix
+  Nothing -> error
+    (unwords
+      ["unsafeDropPrefix:", show prefix, "is not a prefix of", show string]
+    )
 
 
 dropPrefix :: String -> String -> Maybe String
-dropPrefix prefix string =
-  if List.isPrefixOf prefix string
-    then Just (drop (length prefix) string)
-    else Nothing
+dropPrefix prefix string = if prefix `List.isPrefixOf` string
+  then Just (drop (length prefix) string)
+  else Nothing
