@@ -47,7 +47,7 @@ common library
     , network-uri >= 2.6.3 && < 2.7
     , tagsoup >= 0.14.8 && < 0.15
     , text >= 1.2.4 && < 1.3
-    , time >= 1.9.3 && < 1.10
+    , time >= 1.9.3 && < 1.13
   default-language: Haskell2010
   ghc-options:
     -Weverything
