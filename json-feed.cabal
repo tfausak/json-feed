@@ -40,13 +40,13 @@ flag pedantic
 
 common library
   build-depends:
-    base >= 4.13.0 && < 4.17
+    base >= 4.13.0 && < 4.18
     , aeson >= 1.4.7 && < 1.6 || >= 2.0.0 && < 2.2
     , bytestring >= 0.10.10 && < 0.12
     , mime-types >= 0.1.0 && < 0.2
     , network-uri >= 2.6.3 && < 2.7
     , tagsoup >= 0.14.8 && < 0.15
-    , text >= 1.2.4 && < 1.3
+    , text >= 1.2.4 && < 1.3 || >= 2.0 && < 2.1
     , time >= 1.9.3 && < 1.13
   default-language: Haskell2010
   ghc-options:
