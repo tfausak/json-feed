@@ -1,7 +1,7 @@
 cabal-version: 2.2
 
 name: json-feed
-version: 2.0.0.3
+version: 2.0.0.4
 
 synopsis: JSON Feed
 description:
