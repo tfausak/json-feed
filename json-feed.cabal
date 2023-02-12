@@ -82,7 +82,7 @@ library
   exposed-modules: JsonFeed
   hs-source-dirs: source/library
 
-test-suite json-feed-test
+test-suite json-feed-test-suite
   import: executable
 
   build-depends:
