@@ -1,6 +1,6 @@
 # JSON Feed
 
-[![Travis CI](https://travis-ci.org/tfausak/json-feed.svg?branch=master)](https://travis-ci.org/tfausak/json-feed)
+[![CI](https://github.com/tfausak/json-feed/workflows/CI/badge.svg)](https://github.com/tfausak/json-feed/actions/new)
 [![Hackage](https://img.shields.io/hackage/v/json-feed)](https://hackage.haskell.org/package/json-feed)
 [![Stackage](https://www.stackage.org/package/json-feed/badge/nightly?label=stackage)](https://www.stackage.org/package/json-feed)
 
