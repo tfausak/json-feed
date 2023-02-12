@@ -1,15 +1,14 @@
 module Main
-  ( main
-  ) where
-
-import System.FilePath ((<.>), (</>))
+  ( main,
+  )
+where
 
 import qualified Control.Monad as Monad
 import qualified Data.ByteString.Lazy as ByteString
 import qualified Data.Either as Either
 import qualified JsonFeed
+import System.FilePath ((<.>), (</>))
 import qualified Test.Hspec as Hspec
-
 
 main :: IO ()
 main = Hspec.hspec . Hspec.parallel . Hspec.describe "JsonFeed" $ do
@@ -21,15 +20,15 @@ main = Hspec.hspec . Hspec.parallel . Hspec.describe "JsonFeed" $ do
 
 feeds :: [String]
 feeds =
-  [ "allenpike.com"
-  , "daringfireball.net"
-  , "flyingmeat.com"
-  , "hypercritical.co"
-  , "inessential.com"
-  , "jsonfeed.org"
-  , "manton.org"
-  , "maybepizza.com"
-  , "shapeof.com"
-  , "therecord.co"
-  , "timetable.manton.org"
+  [ "allenpike.com",
+    "daringfireball.net",
+    "flyingmeat.com",
+    "hypercritical.co",
+    "inessential.com",
+    "jsonfeed.org",
+    "manton.org",
+    "maybepizza.com",
+    "shapeof.com",
+    "therecord.co",
+    "timetable.manton.org"
   ]
