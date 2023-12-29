@@ -42,7 +42,7 @@ common library
   build-depends:
     , aeson >= 2.0.3 && < 2.3
     , base >= 4.16.0 && < 4.20
-    , bytestring >= 0.11.3 && < 0.12
+    , bytestring >= 0.11.3 && < 0.13
     , mime-types >= 0.1.0 && < 0.2
     , network-uri >= 2.6.4 && < 2.7
     , tagsoup >= 0.14.8 && < 0.15
