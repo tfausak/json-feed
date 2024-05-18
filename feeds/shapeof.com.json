@@ -1,68 +1,68 @@
 {
-    "version": "https://jsonfeed.org/version/1",
-    "title": "The Shape of Everything",
-    "home_page_url": "http://shapeof.com/",
-    "feed_url": "http://shapeof.com/feed.json",
-    "description": "A website mostly about Mac stuff, written by Gus Mueller",
-    "author": {
-        "name": "Gus Mueller"
+  "author": {
+    "name": "Gus Mueller"
+  },
+  "description": "A website mostly about Mac stuff, written by Gus Mueller",
+  "feed_url": "http://shapeof.com/feed.json",
+  "home_page_url": "http://shapeof.com/",
+  "items": [
+    {
+      "content_html": "<p><a href=\"http://astronaut.io/\">Astronaut.io</a>:</p>\n<blockquote>\n<p>&quot;Today, you are an Astronaut. You are floating in inner space 100 miles above the surface of Earth. You peer through your window and this is what you see. You are people watching. These are fleeting moments.</p>\n<p>&quot;These videos come from YouTube. They were uploaded in the last week and have titles like DSC 1234 and IMG 4321. They have almost zero previous views. They are unnamed, unedited, and unseen by anyone but YOU.&quot;</p>\n</blockquote>\n<p>This video stream(s) are mesmerizing. At first, I thought they must have been curated somehow. But then I took a look at the number of views of them, and the count was usually under ten. I think they really are random. It&#39;s amazing.</p>\n",
+      "date_published": "2017-01-18T12:27:43-08:00",
+      "id": "http://shapeof.com/archives/2017/1/today_you_are_an_astronaut.html",
+      "title": "Today you are an astronaut",
+      "url": "http://shapeof.com/archives/2017/1/today_you_are_an_astronaut.html"
     },
-    "items": [
-        {
-            "id": "http://shapeof.com/archives/2017/1/today_you_are_an_astronaut.html",
-            "title": "Today you are an astronaut",
-            "content_html": "<p><a href=\"http://astronaut.io/\">Astronaut.io</a>:</p>\n<blockquote>\n<p>&quot;Today, you are an Astronaut. You are floating in inner space 100 miles above the surface of Earth. You peer through your window and this is what you see. You are people watching. These are fleeting moments.</p>\n<p>&quot;These videos come from YouTube. They were uploaded in the last week and have titles like DSC 1234 and IMG 4321. They have almost zero previous views. They are unnamed, unedited, and unseen by anyone but YOU.&quot;</p>\n</blockquote>\n<p>This video stream(s) are mesmerizing. At first, I thought they must have been curated somehow. But then I took a look at the number of views of them, and the count was usually under ten. I think they really are random. It&#39;s amazing.</p>\n",
-            "date_published": "2017-01-18T12:27:43-08:00",
-            "url": "http://shapeof.com/archives/2017/1/today_you_are_an_astronaut.html"
-        },
-        {
-            "id": "http://shapeof.com/archives/2017/2/piezos_life_outside_the_app_store.html",
-            "title": "Piezo’s Life Outside The App Store",
-            "content_html": "<p><a href=\"https://weblog.rogueamoeba.com/2017/02/10/piezos-life-outside-the-app-store/\">Piezo’s Life Outside The App Store</a></p>\n<p>Paul Kafasis talks about what sales and revenue for Rogue Amoeba&#39;s app Piezo looks both in the App Store, and out of it.</p>\n",
-            "date_published": "2017-02-10T09:52:38-08:00",
-            "url": "http://shapeof.com/archives/2017/2/piezos_life_outside_the_app_store.html"
-        },
-        {
-            "id": "http://shapeof.com/archives/2017/2/brothers_of_climbing.html",
-            "title": "Brothers of Climbing",
-            "content_html": "<p><a href=\"https://www.youtube.com/watch?v=7LWq5s-s4pY&amp;feature=youtu.be\">This video is the best thing</a> I&#39;ve seen in the climbing community for a long while.</p>\n<p>Diversity has always been huge problem in the climbing world. I&#39;m glad <a href=\"https://boccrew.com\">Brothers of Climbing</a> is helping to fix it.</p>\n",
-            "date_published": "2017-02-17T12:20:19-08:00",
-            "url": "http://shapeof.com/archives/2017/2/brothers_of_climbing.html"
-        },
-        {
-            "id": "http://shapeof.com/archives/2017/3/acorn_5.6.4_released.html",
-            "title": "Acorn 5.6.4 Released",
-            "content_html": "<p>Up here at the FM world headquarters, I&#39;ve recently pushed the buttons and typed the commands to make <a href=\"https://secure.flyingmeat.com/acorn/\">Acorn</a> 5.6.4 roll out to all my favorite people.</p>\n<p>It&#39;s purely a bug fix release, but it includes a fix for a 10.12 issue that I&#39;ve spent way too long tracking down. So if you&#39;re on 10.12 Sierra, and you&#39;ve seen the occasional case where a black box would suddenly appear somewhere on your canvas, this release is for you.</p>\n<p>So start your update engines and grab it today.</p>\n<p>And a small request: if love Acorn and you&#39;ve <a href=\"http://flyingmeat.com/acorn/appstore/\">purchased it via the App Store</a>, why not leave it a nice review or give it a handful of stars? When we push out new releases, it resets the previous reviews and ratings in the store which is a huge bummer for us (and it also creates a disincentive for releasing bugfix builds! But that&#39;s a story for another time). We love getting reviews and ratings though, it&#39;s like fuel for future releases.</p>\n",
-            "date_published": "2017-03-16T09:16:34-07:00",
-            "url": "http://shapeof.com/archives/2017/3/acorn_5.6.4_released.html"
-        },
-        {
-            "id": "http://shapeof.com/archives/2017/5/looking_for_some_testers.html",
-            "title": "I'm looking for some folks to test major new features in Acorn.",
-            "content_html": "<p>I&#39;m currently doing a private beta of some big new features in Acorn (for Mac OS 10.11+), and I&#39;m looking for some folks to kick the figurative tires and give some feedback if they have any. You don&#39;t need to be a daily Acorn user, if you only launch it once or twice a week that&#39;s fine.</p>\n<p>Sound interesting? Shoot me an email: <a href=\"mailto:gus@flyingmeat.com?subject=Acorn%20Beta\">gus@flyingmeat.com</a>.</p>\n",
-            "date_published": "2017-05-09T12:53:29-07:00",
-            "url": "http://shapeof.com/archives/2017/5/looking_for_some_testers.html"
-        },
-        {
-            "id": "http://shapeof.com/archives/2017/5/seattle_in_mourning.html",
-            "title": "Seattle in Mourning",
-            "content_html": "<p>We found out yesterday Chris Cornell, Seattle native and soul of Soundgarden, <a href=\"https://www.nytimes.com/2017/05/18/arts/music/chris-cornell-dead-soundgarden.html?_r=1\">has died</a>. It&#39;s looking like a suicide.</p>\n<p>I was walking around Seattle last evening with friends, for happier reasons, and it was impossible to ignore the impact of Chris&#39;s death on the city. Every pub we entered was playing songs of his, sometimes a little Nirvana sprinkled in because that still hurts too. Temple of the Dog and Soundgarden shirts and jackets were out. The DJs on <a href=\"http://kexp.org\">KEXP</a> were constantly on the verge of tears, talking about Chris, suicide, and playing his music. </p>\n<p>As we sat down under some trees you could look up and see the <a href=\"https://www.google.com/search?q=Space+Needle&amp;client=safari&amp;rls=en&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjfuaDhsvzTAhVE8WMKHVdaC5gQ_AUICygC&amp;biw=1758&amp;bih=1290\">Space Needle</a> lit up. A few minutes later it went dark. Random people gathered on a corner, with a guitar of course, singing songs of his.</p>\n<p>On the way home there was a sign hanging from an overpass, the words <a href=\"https://www.youtube.com/watch?v=5qi8hhiYEQA\">Say Hello to Heaven</a> painted on.</p>\n<p>Chris Cornell will be missed.</p>\n",
-            "date_published": "2017-05-19T09:46:14-07:00",
-            "url": "http://shapeof.com/archives/2017/5/seattle_in_mourning.html"
-        },
-        {
-            "id": "http://shapeof.com/archives/2017/5/how_to_survive_as_a_solo_dev_for_like_a_decade_or_so.html",
-            "title": "How to Survive as a Solo Dev for Like a Decade or So",
-            "content_html": "<p>Dan Marshall: <a href=\"http://www.sizefivegames.com/2017/05/04/how-to-survive-as-a-solo-dev-for-like-a-decade-or-so/\">How to Survive as a Solo Dev for Like a Decade or So</a></p>\n<blockquote>\n<p>&quot;I read a thing recently. Quite an interesting article about ‘how to survive as a solo dev’, but it was written by someone who was releasing their first game (presumably as ‘marketing’) and “haaaaaaang on”, I thought. Yes that’s impressive well done but it’s not exactly advice from someone who has been doing it for a decade and WAIT WAIT WAIT I’ve been doing it for a decade! I wonder what MY advice is to survive as a Solo Dev beyond one or two games.&quot;</p>\n</blockquote>\n<p>I think Dan&#39;s advice transfers very well to app development in general.</p>\n<p>You may notice that #1 on his list is &quot;Work from home&quot;, and I&#39;ve been working out of an office for a number of years (6-7 at this point?). As of yesterday, that&#39;s no longer the case.</p>\n<p>Last December we got an 8 month old puppy, and he wasn&#39;t quite ready to stay at home alone so I ended up not driving in to work a couple of a days a week. Turns out, I like working from home. No traffic to deal with, I can just pop upstairs for lunch, etc. So I decided that at the end of my lease, I just wouldn&#39;t renew. As the date got closer, I found that going into the office was really getting on my nerves and even though I still have a little over a month left on the rental, I&#39;m going to start working at home full time anyway.</p>\n<p>Why did I get an office in the first place? There were two main reasons. The first was that I was hiring employees and I didn&#39;t want folks coming to my home. The second reason was that I need to get out of the house. There were stretches of time where I didn&#39;t leave a three mile radius of my home for weeks and my wife said I was getting socially awkward. I wasn&#39;t getting out enough.</p>\n<p>I eventually decided that I&#39;m happier working alone and kept the office out of momentum. And I get out a lot more these days, so hopefully the social problem won&#39;t be one anymore. I hope.</p>\n",
-            "date_published": "2017-05-24T11:47:16-07:00",
-            "url": "http://shapeof.com/archives/2017/5/how_to_survive_as_a_solo_dev_for_like_a_decade_or_so.html"
-        },
-        {
-            "id": "http://shapeof.com/archives/2017/5/first_week_of_json_feed.html",
-            "title": "First week of JSON Feed",
-            "content_html": "<p>Manton Reece: <a href=\"http://www.manton.org/2017/05/first-week-of-json-feed.html\">First week of JSON Feed</a>:</p>\n<blockquote>\n<p>&quot;I’ve been impressed with how quickly people have adopted JSON Feed. There are a bunch of feeds in the wild now, as well as code and templates for popular languages and web frameworks. The next step is support in feed readers, including brand new feed readers, which is already happening.&quot;</p>\n</blockquote>\n<p>I&#39;m a big fan of this, and you can find my JSON Feed <a href=\"http://shapeof.com/feed.json\">here</a>. The scripts that generate this site are written in <a href=\"http://nodejs.org\">Node.js</a>, so adding support for it was trivial.</p>\n<p>Slightly related to this, I also <a href=\"https://micro.blog/ccgus\">have a Micro.blog site</a> I&#39;m playing around with.</p>\n",
-            "date_published": "2017-05-24T15:44:36-07:00",
-            "url": "http://shapeof.com/archives/2017/5/first_week_of_json_feed.html"
-        }
-    ]
+    {
+      "content_html": "<p><a href=\"https://weblog.rogueamoeba.com/2017/02/10/piezos-life-outside-the-app-store/\">Piezo’s Life Outside The App Store</a></p>\n<p>Paul Kafasis talks about what sales and revenue for Rogue Amoeba&#39;s app Piezo looks both in the App Store, and out of it.</p>\n",
+      "date_published": "2017-02-10T09:52:38-08:00",
+      "id": "http://shapeof.com/archives/2017/2/piezos_life_outside_the_app_store.html",
+      "title": "Piezo’s Life Outside The App Store",
+      "url": "http://shapeof.com/archives/2017/2/piezos_life_outside_the_app_store.html"
+    },
+    {
+      "content_html": "<p><a href=\"https://www.youtube.com/watch?v=7LWq5s-s4pY&amp;feature=youtu.be\">This video is the best thing</a> I&#39;ve seen in the climbing community for a long while.</p>\n<p>Diversity has always been huge problem in the climbing world. I&#39;m glad <a href=\"https://boccrew.com\">Brothers of Climbing</a> is helping to fix it.</p>\n",
+      "date_published": "2017-02-17T12:20:19-08:00",
+      "id": "http://shapeof.com/archives/2017/2/brothers_of_climbing.html",
+      "title": "Brothers of Climbing",
+      "url": "http://shapeof.com/archives/2017/2/brothers_of_climbing.html"
+    },
+    {
+      "content_html": "<p>Up here at the FM world headquarters, I&#39;ve recently pushed the buttons and typed the commands to make <a href=\"https://secure.flyingmeat.com/acorn/\">Acorn</a> 5.6.4 roll out to all my favorite people.</p>\n<p>It&#39;s purely a bug fix release, but it includes a fix for a 10.12 issue that I&#39;ve spent way too long tracking down. So if you&#39;re on 10.12 Sierra, and you&#39;ve seen the occasional case where a black box would suddenly appear somewhere on your canvas, this release is for you.</p>\n<p>So start your update engines and grab it today.</p>\n<p>And a small request: if love Acorn and you&#39;ve <a href=\"http://flyingmeat.com/acorn/appstore/\">purchased it via the App Store</a>, why not leave it a nice review or give it a handful of stars? When we push out new releases, it resets the previous reviews and ratings in the store which is a huge bummer for us (and it also creates a disincentive for releasing bugfix builds! But that&#39;s a story for another time). We love getting reviews and ratings though, it&#39;s like fuel for future releases.</p>\n",
+      "date_published": "2017-03-16T09:16:34-07:00",
+      "id": "http://shapeof.com/archives/2017/3/acorn_5.6.4_released.html",
+      "title": "Acorn 5.6.4 Released",
+      "url": "http://shapeof.com/archives/2017/3/acorn_5.6.4_released.html"
+    },
+    {
+      "content_html": "<p>I&#39;m currently doing a private beta of some big new features in Acorn (for Mac OS 10.11+), and I&#39;m looking for some folks to kick the figurative tires and give some feedback if they have any. You don&#39;t need to be a daily Acorn user, if you only launch it once or twice a week that&#39;s fine.</p>\n<p>Sound interesting? Shoot me an email: <a href=\"mailto:gus@flyingmeat.com?subject=Acorn%20Beta\">gus@flyingmeat.com</a>.</p>\n",
+      "date_published": "2017-05-09T12:53:29-07:00",
+      "id": "http://shapeof.com/archives/2017/5/looking_for_some_testers.html",
+      "title": "I'm looking for some folks to test major new features in Acorn.",
+      "url": "http://shapeof.com/archives/2017/5/looking_for_some_testers.html"
+    },
+    {
+      "content_html": "<p>We found out yesterday Chris Cornell, Seattle native and soul of Soundgarden, <a href=\"https://www.nytimes.com/2017/05/18/arts/music/chris-cornell-dead-soundgarden.html?_r=1\">has died</a>. It&#39;s looking like a suicide.</p>\n<p>I was walking around Seattle last evening with friends, for happier reasons, and it was impossible to ignore the impact of Chris&#39;s death on the city. Every pub we entered was playing songs of his, sometimes a little Nirvana sprinkled in because that still hurts too. Temple of the Dog and Soundgarden shirts and jackets were out. The DJs on <a href=\"http://kexp.org\">KEXP</a> were constantly on the verge of tears, talking about Chris, suicide, and playing his music. </p>\n<p>As we sat down under some trees you could look up and see the <a href=\"https://www.google.com/search?q=Space+Needle&amp;client=safari&amp;rls=en&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjfuaDhsvzTAhVE8WMKHVdaC5gQ_AUICygC&amp;biw=1758&amp;bih=1290\">Space Needle</a> lit up. A few minutes later it went dark. Random people gathered on a corner, with a guitar of course, singing songs of his.</p>\n<p>On the way home there was a sign hanging from an overpass, the words <a href=\"https://www.youtube.com/watch?v=5qi8hhiYEQA\">Say Hello to Heaven</a> painted on.</p>\n<p>Chris Cornell will be missed.</p>\n",
+      "date_published": "2017-05-19T09:46:14-07:00",
+      "id": "http://shapeof.com/archives/2017/5/seattle_in_mourning.html",
+      "title": "Seattle in Mourning",
+      "url": "http://shapeof.com/archives/2017/5/seattle_in_mourning.html"
+    },
+    {
+      "content_html": "<p>Dan Marshall: <a href=\"http://www.sizefivegames.com/2017/05/04/how-to-survive-as-a-solo-dev-for-like-a-decade-or-so/\">How to Survive as a Solo Dev for Like a Decade or So</a></p>\n<blockquote>\n<p>&quot;I read a thing recently. Quite an interesting article about ‘how to survive as a solo dev’, but it was written by someone who was releasing their first game (presumably as ‘marketing’) and “haaaaaaang on”, I thought. Yes that’s impressive well done but it’s not exactly advice from someone who has been doing it for a decade and WAIT WAIT WAIT I’ve been doing it for a decade! I wonder what MY advice is to survive as a Solo Dev beyond one or two games.&quot;</p>\n</blockquote>\n<p>I think Dan&#39;s advice transfers very well to app development in general.</p>\n<p>You may notice that #1 on his list is &quot;Work from home&quot;, and I&#39;ve been working out of an office for a number of years (6-7 at this point?). As of yesterday, that&#39;s no longer the case.</p>\n<p>Last December we got an 8 month old puppy, and he wasn&#39;t quite ready to stay at home alone so I ended up not driving in to work a couple of a days a week. Turns out, I like working from home. No traffic to deal with, I can just pop upstairs for lunch, etc. So I decided that at the end of my lease, I just wouldn&#39;t renew. As the date got closer, I found that going into the office was really getting on my nerves and even though I still have a little over a month left on the rental, I&#39;m going to start working at home full time anyway.</p>\n<p>Why did I get an office in the first place? There were two main reasons. The first was that I was hiring employees and I didn&#39;t want folks coming to my home. The second reason was that I need to get out of the house. There were stretches of time where I didn&#39;t leave a three mile radius of my home for weeks and my wife said I was getting socially awkward. I wasn&#39;t getting out enough.</p>\n<p>I eventually decided that I&#39;m happier working alone and kept the office out of momentum. And I get out a lot more these days, so hopefully the social problem won&#39;t be one anymore. I hope.</p>\n",
+      "date_published": "2017-05-24T11:47:16-07:00",
+      "id": "http://shapeof.com/archives/2017/5/how_to_survive_as_a_solo_dev_for_like_a_decade_or_so.html",
+      "title": "How to Survive as a Solo Dev for Like a Decade or So",
+      "url": "http://shapeof.com/archives/2017/5/how_to_survive_as_a_solo_dev_for_like_a_decade_or_so.html"
+    },
+    {
+      "content_html": "<p>Manton Reece: <a href=\"http://www.manton.org/2017/05/first-week-of-json-feed.html\">First week of JSON Feed</a>:</p>\n<blockquote>\n<p>&quot;I’ve been impressed with how quickly people have adopted JSON Feed. There are a bunch of feeds in the wild now, as well as code and templates for popular languages and web frameworks. The next step is support in feed readers, including brand new feed readers, which is already happening.&quot;</p>\n</blockquote>\n<p>I&#39;m a big fan of this, and you can find my JSON Feed <a href=\"http://shapeof.com/feed.json\">here</a>. The scripts that generate this site are written in <a href=\"http://nodejs.org\">Node.js</a>, so adding support for it was trivial.</p>\n<p>Slightly related to this, I also <a href=\"https://micro.blog/ccgus\">have a Micro.blog site</a> I&#39;m playing around with.</p>\n",
+      "date_published": "2017-05-24T15:44:36-07:00",
+      "id": "http://shapeof.com/archives/2017/5/first_week_of_json_feed.html",
+      "title": "First week of JSON Feed",
+      "url": "http://shapeof.com/archives/2017/5/first_week_of_json_feed.html"
+    }
+  ],
+  "title": "The Shape of Everything",
+  "version": "https://jsonfeed.org/version/1"
 }
