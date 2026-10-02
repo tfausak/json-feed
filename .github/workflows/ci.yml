@@ -33,7 +33,7 @@ jobs:
         with:
           name: json-feed-${{ github.sha }}-${{ matrix.os }}-${{ matrix.ghc }}
           path: artifact.tar
-      - run: cabal run -- json-feed-test-suite --randomize --strict
+      - run: cabal run json-feed-test-suite -- --randomize --strict
     strategy:
       matrix:
         include:
